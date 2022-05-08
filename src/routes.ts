@@ -26,6 +26,7 @@ routes.post('/feedbacks', async (request, response) => {
 
     return response.status(201).send();
   } catch (err) {
+    console.log(err);
     return response.status(500).send();
   }
 });
